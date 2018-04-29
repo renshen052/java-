@@ -8,6 +8,7 @@ package eleven_twenty;
     *******
    *********
 */
+
 import java.util.Scanner;
 
 public class PrintStar {

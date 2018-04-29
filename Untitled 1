@@ -1,0 +1,20 @@
+	/**
+	 * 查找
+	 * 
+	 * @param value
+	 * @return
+	 */
+	public Node find(int key) {
+		Node current = root; // 根节点
+		while (current.getId() != key) {
+			if (key < current.getId()) {
+				current = current.leftChild; // 去向左孩子
+			} else {
+				current = current.rightChild; // 去向右孩子
+			}
+
+			if (current == null)
+				return null;// 找不到，返回空
+		}
+		return current; // 找到，返回
+	}
